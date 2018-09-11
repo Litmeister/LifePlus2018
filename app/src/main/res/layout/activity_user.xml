@@ -8,15 +8,58 @@
     android:orientation="vertical"
     tools:context=".UserActivity">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_toEndOf="@+id/progressBar"
+        android:text="@string/mas"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@+id/progressBar2"
+        android:layout_toEndOf="@+id/progressBar"
+        android:text="@string/mas2"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@+id/progressBar3"
+        android:layout_toEndOf="@+id/progressBar"
+        android:text="@string/mas3"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignBottom="@+id/progressBar4"
+        android:layout_toEndOf="@+id/progressBar"
+        android:text="@string/mas4"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/bienvenido"
-        android:textSize="40sp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnLogOut"
@@ -26,4 +69,98 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="17dp"
         android:text="@string/salir" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="50"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:progress="70"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:progress="10" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:progress="47" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_marginBottom="-190dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/medicamentos"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_below="@+id/progressBar"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/tratamiento"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_below="@+id/progressBar2"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/ejercicios"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_below="@+id/progressBar3"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/consultas_m_dicas"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>

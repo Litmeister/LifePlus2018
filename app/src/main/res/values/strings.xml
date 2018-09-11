@@ -2,4 +2,20 @@
     <string name="app_name">LifePlus</string>
     <string name="bienvenido">Bienvenido</string>
     <string name="salir">Salir</string>
+    <string name="medicamentos">Medicamentos</string>
+    <string name="tratamiento">Tratamiento</string>
+    <string name="ejercicios">Ejercicios</string>
+    <string name="mas">+</string>
+    <string name="mas2">+</string>
+    <string name="mas3">+</string>
+    <string name="mas4">+</string>
+    <string name="button6">ATRAS</string>
+    <string name="medicamentos2">Medicamentos</string>
+    <string name="atras">Atras</string>
+    <string name="tratamiento2">Tratamiento</string>
+    <string name="ejercicios2">Ejercicios</string>
+    <string name="atras2">Atras</string>
+    <string name="consultas_m_dicas">Consultas Médicas</string>
+    <string name="consultas_m_dicas2">Consultas Médicas</string>
+    <string name="atras3">Atras</string>
 </resources>
