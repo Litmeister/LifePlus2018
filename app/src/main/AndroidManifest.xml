@@ -19,6 +19,10 @@
 
         <activity android:name=".ActivityLogin"/>
         <activity android:name=".UserActivity"/>
+        <activity android:name=".Medicamentos"/>
+        <activity android:name=".Tratamiento"/>
+        <activity android:name=".Ejercicios"/>
+        <activity android:name=".ConsultasMedicas"/>
 
     </application>
 
