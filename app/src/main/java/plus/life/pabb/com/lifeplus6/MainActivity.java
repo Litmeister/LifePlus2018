@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
     public EditText emailId, passwd;
     Button btnSignUp;
-    TextView signIn;
+    TextView signIn, textView6;
     FirebaseAuth firebaseAuth;
 
     @Override
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         passwd = findViewById(R.id.ETpassword);
         btnSignUp = findViewById(R.id.btnSignUp);
         signIn = findViewById(R.id.TVSignIn);
+        textView6 = findViewById(R.id.textView6);
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     passwd.setError("Ingrese su Contraseña");
                     passwd.requestFocus();
                 } else if (emailID.isEmpty() && paswd.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Cuadro Imcompleto!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Contraseña equivocada!", Toast.LENGTH_SHORT).show();
                 } else if (!(emailID.isEmpty() && paswd.isEmpty())) {
                     firebaseAuth.createUserWithEmailAndPassword(emailID, paswd).addOnCompleteListener(MainActivity.this, new OnCompleteListener() {
                         @Override

@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="343dp"
+        android:layout_height="232dp"
+        android:layout_marginBottom="25dp"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/logolifeplus" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/ETemail"
@@ -14,7 +31,7 @@
         android:layout_margin="15dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        />
+        android:textColorHint="@color/colorPrimaryDark" />
 
     <EditText
         android:id="@+id/ETpassword"
@@ -22,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:hint="Contraseña"
+        android:textColorHint="@color/colorPrimaryDark"
         android:inputType="numberPassword" />
 
     <Button
@@ -29,7 +47,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:text="Entrar" />
+        android:text="Entrar"
+        android:textColor="#ffffff"
+        android:background="@drawable/disenoboton"
+        />
 
     <TextView
         android:id="@+id/TVSignIn"
@@ -38,4 +59,5 @@
         android:layout_margin="15dp"
         android:text="Ya tiene una cuenta? Ingrese Aqui"
         android:textSize="20dp" />
+
 </LinearLayout>
