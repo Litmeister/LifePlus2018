@@ -60,7 +60,7 @@ public class UserActivity extends AppCompatActivity {
 
         });
 
-        imageButton7.setOnClickListener(new View.OnClickListener() {
+        imageButton8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent I = new Intent(UserActivity.this, Ejercicios.class);
@@ -69,7 +69,7 @@ public class UserActivity extends AppCompatActivity {
 
         });
 
-        imageButton8.setOnClickListener(new View.OnClickListener() {
+        imageButton7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent I = new Intent(UserActivity.this, ConsultasMedicas.class);

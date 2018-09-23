@@ -15,4 +15,11 @@
     <string name="consultas_m_dicas2">Consultas Médicas</string>
     <string name="atras3">Atras</string>
     <string name="todo">TODO</string>
+    <string name="lugar_hora_oficina">Lugar, Hora, Oficina</string>
+    <string name="borrar">Borrar</string>
+    <string name="buscar">Buscar</string>
+    <string name="agregar">Agregar</string>
+    <string name="tratamiento_numero_actual_numero_final">Tratamiento, Numero Actual, Numero Final</string>
+    <string name="nombre_hora">Nombre, Hora</string>
+    <string name="ejercicio_cantidad_fecha">Ejercicio, Cantidad, Fecha</string>
 </resources>
