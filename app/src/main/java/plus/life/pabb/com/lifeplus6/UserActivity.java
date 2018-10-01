@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class UserActivity extends AppCompatActivity {
     ImageButton imageButton5, imageButton6, imageButton7, imageButton8;
-    Button btnLogOut;
+    Button btnLogOut, botoncodigo;
     ProgressBar progressBar, progressBar2, progressBar3, progressBar4;
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -30,6 +30,7 @@ public class UserActivity extends AppCompatActivity {
         imageButton6 = (ImageButton) findViewById(R.id.imageButton6);
         imageButton7 = (ImageButton) findViewById(R.id.imageButton7);
         imageButton8 = (ImageButton) findViewById(R.id.imageButton8);
+        botoncodigo = (Button) findViewById(R.id.botoncodigo);
 
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +61,7 @@ public class UserActivity extends AppCompatActivity {
 
         });
 
-        imageButton7.setOnClickListener(new View.OnClickListener() {
+        imageButton8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent I = new Intent(UserActivity.this, Ejercicios.class);
@@ -69,7 +70,7 @@ public class UserActivity extends AppCompatActivity {
 
         });
 
-        imageButton8.setOnClickListener(new View.OnClickListener() {
+        imageButton7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent I = new Intent(UserActivity.this, ConsultasMedicas.class);
@@ -78,5 +79,14 @@ public class UserActivity extends AppCompatActivity {
 
         });
 
+        botoncodigo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent I = new Intent(UserActivity.this, CodigoRandom.class);
+                startActivity(I);
+            }
+
+        });
+
     }
-}
+    }
