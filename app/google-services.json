@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "324819273871-bai08f6iqnmam6bq9mbscb4pfhumb08c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "plus.life.pabb.com.lifeplus6",
+            "certificate_hash": "6a92dbf3651603e376b754340333abb0b9002733"
+          }
+        },
+        {
           "client_id": "324819273871-gepbd0m7cp5rorhl71pujbk3dpis785u.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324819273871-gepbd0m7cp5rorhl71pujbk3dpis785u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

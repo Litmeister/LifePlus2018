@@ -16,8 +16,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="17dp"
         android:background="@drawable/disenoboton"
+        android:textColor="#ffffff"
         android:text="@string/salir"
-        android:textColor="#ffffff" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -174,5 +175,16 @@
         android:padding="10dp"
         android:progress="47"
         android:visibility="visible" />
+
+    <Button
+        android:id="@+id/botoncodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="114dp"
+        android:background="@drawable/disenoboton"
+        android:text="Codigo"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>
