@@ -23,6 +23,6 @@
     <string name="nombre_hora">Nombre, Hora</string>
     <string name="ejercicio_cantidad_fecha">Ejercicio, Cantidad, Fecha</string>
     <string name="atras4">Atras</string>
-    <string name="button">Button</string>
+    <string name="button">GENERAR</string>
     <string name="textview">Codigo</string>
 </resources>

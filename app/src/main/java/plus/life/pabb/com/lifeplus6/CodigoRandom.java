@@ -7,10 +7,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Random;
 
-public class CodigoRandom extends AppCompatActivity {
 
+public class CodigoRandom extends AppCompatActivity {
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private DatabaseReference dbRef = database.getReference("Codigo");
     private Button boton, botonatras;
     private TextView codigo;
 
@@ -23,10 +28,16 @@ public class CodigoRandom extends AppCompatActivity {
         botonatras = (Button) findViewById(R.id.botonatras);
         codigo = (TextView) findViewById(R.id.codigo);
 
+        // borrar .push para que se reemplase, igual con .child(key)
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 codigo.setText(generateString(6));
+                String value = codigo.getText().toString();
+                String key = dbRef.push().getKey();
+                dbRef.child(key).child("codigo").setValue(value);
+
+
             }
         });
 
