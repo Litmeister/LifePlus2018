@@ -1,7 +1,5 @@
 # LifePlus2018
 
-Versíon 0.1.0
+Versíon 0.1.6
 
-Se agrego el login con el respectivo registro de la aplicacion.
-
-Esta esta conectada por firebase para el guardado de registro de los pacientes.
+Se agrego clase CodigoRandom para mostrar al paciente un codigo random
